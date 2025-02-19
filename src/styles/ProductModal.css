@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Trad:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*  Modal Overlay (Background Dim)  */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/*  Modal Container  */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 600px;
+  max-width: 90%;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+  font-family: "Rubik", serif;
+}
+
+/* Close Button  */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Modal Layout  */
+.modal-body {
+  display: flex;
+  gap: 20px;
+}
+
+/* Product Image Styling */
+.product-image {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Product Details Section  */
+.product-details {
+  flex-grow: 1;
+  font-family: "Rubik", serif;
+}
+
+/*  Product Rating & Stock */
+.product-rating {
+  font-size: 14px;
+  color: #666;
+}
+
+/* In Stock Indicator */
+.in-stock {
+  color: green;
+  font-weight: bold;
+  font-family: "Rubik", serif;
+}
+
+/* Out of Stock Indicator */
+.out-of-stock {
+  color: red;
+  font-weight: bold;
+  font-family: "Rubik", serif;
+}
+
+/*  Product Price Styling  */
+.product-price {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Rubik", serif;
+}
+
+/* Product Description Styling */
+.product-description {
+  font-size: 14px;
+  color: #444;
+  margin: 10px 0;
+  font-family: "Rubik", serif;
+}
+
+/* Quantity Selector Styling */
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Quantity Buttons */
+.quantity-container button {
+  background: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Rubik", serif;
+}
+
+/* Quantity Display */
+.quantity-container span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Add to Cart Button  */
+.add-to-cart-btn {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  font-family: "Rubik", serif;
+}
+
+/* Hover Effect for Add to Cart Button */
+.add-to-cart-btn:hover {
+  background: #e64a19;
+}
+
+/*  Fade In Animation for Smooth Appearance */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Mobile Screens  */
+@media screen and (max-width: 768px) {
+  .modal-content {
+      width: 90%;
+  }
+
+  .modal-body {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .product-image {
+      width: 100%;
+      max-width: 250px;
+  }
+
+  .product-title {
+      font-size: 18px;
+  }
+
+  .product-price {
+      font-size: 16px;
+  }
+
+  .product-description {
+      font-size: 14px;
+  }
+
+  .quantity-container {
+      justify-content: center;
+  }
+}
