@@ -1,4 +1,4 @@
-g
+
 ### README for  E-Commerce React Project  
 
 # 🛍️ Responsive React E-Commerce UI with Search, Modal & Cart  
