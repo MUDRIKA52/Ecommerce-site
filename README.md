@@ -150,15 +150,7 @@ ecommerce-homepage/
 
 ---
 
-## 🚀 Possible Improvements  
 
-1️⃣ **Checkout Flow**: Implement a **payment page** & real-time checkout system.  
-2️⃣ **Wishlist Feature**: Allow users to **save products for later**.  
-3️⃣ **Backend Integration**: Connect with a real e-commerce backend API.  
-4️⃣ **Improved Animations**: Add **smooth transitions** using Framer Motion.  
-5️⃣ **Dark Mode**: Provide a **theme toggle option** for better user experience.  
-
----
 
 ## 🏆 Evaluation Criteria Checklist  
 
